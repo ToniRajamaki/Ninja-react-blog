@@ -10,10 +10,16 @@ const BlogDetails = () => {
   return (
     <div className="blog-details">
       <article>
-          <h2>{ blog.title }</h2>
-          <p>Written by { blog.author }</p>
-          <div>{ blog.body }</div>
-        </article>
+        <h2>{blog.title}</h2>
+        <p style={{ display: "flex", justifyContent: "space-between" }}>
+          <span>Written by {blog.author}</span>
+          <span style={{ fontWeight: "bold", textAlign: "right" }}>
+            id: {id}
+          </span>
+        </p>
+
+        <div>{blog.body}</div>
+      </article>
     </div>
   );
 };
