@@ -7,12 +7,13 @@ const BlogDetails = () => {
 
   const blog = blogs.find((blog) => blog.id === Number(id));
 
-  console.log("blog::::!!!!", blog);
-  console.log("id!!!", id);
   return (
     <div className="blog-details">
-      <h2>Blog details ({id})</h2>
-      <p>{blog.body}</p>
+      <article>
+          <h2>{ blog.title }</h2>
+          <p>Written by { blog.author }</p>
+          <div>{ blog.body }</div>
+        </article>
     </div>
   );
 };
