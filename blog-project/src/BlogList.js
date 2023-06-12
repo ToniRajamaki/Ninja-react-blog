@@ -1,6 +1,12 @@
 import { Link } from "react-router-dom/cjs/react-router-dom.min";
+import useFetch, { deleteData } from "./useFetch";
 
-const BlogList = ({ blogs, title, handleDelete }) => {
+const BlogList = ({ blogs, title }) => {
+  blogs = useFetch();
+  console.log(
+    "%c🔎bloglist is being called",
+    "color: black; background-color: white; font-weight: bold; font-size:15px;"
+  );
   return (
     <div className="blog-list">
       <h1>{title}</h1>
@@ -10,7 +16,7 @@ const BlogList = ({ blogs, title, handleDelete }) => {
             <h2>{blog.title}</h2>
             <p>Written by {blog.author}</p>
           </Link>
-          <button onClick={() => handleDelete(blog.id)}>DELETE!</button>
+          <button onClick={() => deleteData(blog.id)}>DELETE!</button>
         </div>
       ))}
     </div>

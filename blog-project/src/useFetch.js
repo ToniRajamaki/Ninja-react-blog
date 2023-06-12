@@ -25,8 +25,12 @@ const useFetch = () => {
 };
 const postData = (newBlog) => {
   blogs = [...blogs, newBlog];
-  console.log("🚀 ~ file: useFetch.js:28 ~ postData ~ blogs:", blogs);
+  console.log("🚀 POSTED~ file: useFetch.js:28 ~ postData ~ blogs:", blogs);
+};
+const deleteData = (id) => {
+  blogs = blogs.filter((element) => element.id !== id);
+  console.log("🚀 DELETED ~ file: useFetch.js:32 ~ deleteData ~ blogs:", blogs);
 };
 
 export default useFetch;
-export { useFetch, postData };
+export { useFetch, postData, deleteData };

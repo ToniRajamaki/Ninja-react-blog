@@ -17,7 +17,7 @@ const Create = () => {
     const blog = { title, body, author, id }; //creating blog element
     postData(blog);
   };
-
+  /* FORM */
   return (
     <div className="create">
       <h2>Add a new blog</h2>
