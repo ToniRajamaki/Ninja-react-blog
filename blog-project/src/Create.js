@@ -1,4 +1,10 @@
 import { useState } from "react";
+import { v4 as uuidv4 } from "uuid";
+import { postData } from "./useFetch";
+
+function generateUniqueId() {
+  return uuidv4();
+}
 
 const Create = () => {
   const [title, setTitle] = useState("");
@@ -6,9 +12,10 @@ const Create = () => {
   const [author, setAuthor] = useState("yoshi");
 
   const handleSubmit = (e) => {
-    e.preventDefault();
-    const blog = { title, body, author };
-    console.log(blog);
+    e.preventDefault(); //this prevents default action of the button, in this case refreshing the site
+    const id = generateUniqueId(); //gatherin unique ID
+    const blog = { title, body, author, id }; //creating blog element
+    postData(blog);
   };
 
   return (
