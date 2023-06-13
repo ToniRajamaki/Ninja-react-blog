@@ -23,8 +23,19 @@ const BlogList = ({ blogs, title }) => {
               }}
             >
               <p style={{ marginRight: "auto" }}>Written by {blog.author}</p>
-              <LuGlasses size={15} strokeWidth={1.0} />
-              <p style={{ paddingLeft: "15px", fontSize: "10px" }}> 6 min</p>
+              <LuGlasses
+                size={15}
+                strokeWidth={1.0}
+                colors={"white"}
+                className="LuGlasses"
+              />
+              <p
+                className="whiteHover"
+                style={{ paddingLeft: "15px", fontSize: "10px" }}
+              >
+                {" "}
+                6 min
+              </p>
             </div>
           </Link>
         </div>

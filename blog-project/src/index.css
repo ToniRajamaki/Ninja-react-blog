@@ -55,9 +55,10 @@
 .blog-preview:hover {
   transform: scale(1.03);
   box-shadow: 2px 6px 10px rgba(0,0,0,0.1);
-  border-color: #ff0000;
   background-color: var(--main);
+  border-width: 1.5px;
 }
+
 .blog-preview h2 {
   font-size: 20px;
   color: var(--main);
@@ -66,6 +67,17 @@
 .blog-preview:hover h2 {
   color: rgb(255, 255, 255);
 }
+.blog-preview:hover .LuGlasses {
+  stroke: rgb(255, 255, 255);
+  stroke-width: 1.5px;
+}
+.blog-preview:hover p {
+  color: black;
+}
+.blog-preview:hover .whiteHover {
+  color: white;
+}
+
 
 .blog-preview:hover p {
   color: black;
@@ -124,3 +136,9 @@
   border-radius: 8px;
   cursor: pointer;
 }
+
+.LuGlasses{
+  stroke: var(--font-color)
+}
+/* highlighting icon and readtime in blog list */
+
