@@ -1,0 +1,11 @@
+const CalculateReadingTime = (text) => {
+  const wordsPerMinute = 200; // Adjust this value to your desired reading speed
+
+  const words = text.trim().split(/\s+/);
+  const wordCount = words.length;
+  const readingTimeMinutes = Math.ceil(wordCount / wordsPerMinute);
+
+  return readingTimeMinutes;
+};
+
+export default CalculateReadingTime;
