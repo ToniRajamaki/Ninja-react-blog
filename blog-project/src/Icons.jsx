@@ -13,7 +13,7 @@ function NinjaIcon() {
 
   return (
     <div>
-      <NinjaStarIcon style={iconStyle}/> Using the icon as a component
+      <NinjaStarIcon style={iconStyle}/> 
     </div>
   );
 }
