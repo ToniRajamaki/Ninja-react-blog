@@ -19,7 +19,7 @@ const BlogDetails = () => {
             id: {id}
           </span>
         </p>
-        <div>
+        <div className="display-linebreak">
           <p style={{ textAlign: "justify" }}>{blog.body}</p>
         </div>
         <Link to="/">

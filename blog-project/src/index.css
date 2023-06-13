@@ -142,3 +142,6 @@
 }
 /* highlighting icon and readtime in blog list */
 
+.display-linebreak {
+  white-space: pre-line;
+}
