@@ -1,5 +1,7 @@
 import { useParams } from "react-router-dom/cjs/react-router-dom.min";
 import useFetch from "./useFetch";
+import { deleteData } from "./useFetch";
+import { Link } from "react-router-dom/cjs/react-router-dom.min";
 
 const BlogDetails = () => {
   const { id } = useParams();
@@ -17,8 +19,10 @@ const BlogDetails = () => {
             id: {id}
           </span>
         </p>
-
         <div>{blog.body}</div>
+        <Link to="/">
+          <button onClick={() => deleteData(blog.id)}>DELETE!</button>
+        </Link>
       </article>
     </div>
   );

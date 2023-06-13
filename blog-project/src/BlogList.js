@@ -16,7 +16,6 @@ const BlogList = ({ blogs, title }) => {
             <h2>{blog.title}</h2>
             <p>Written by {blog.author}</p>
           </Link>
-          <button onClick={() => deleteData(blog.id)}>DELETE!</button>
         </div>
       ))}
     </div>
