@@ -42,7 +42,7 @@
 }
 
 
-/* blog previews / list */
+/* blog previews  this is for hovering the things on the blog list/ list */ 
 .blog-preview {
   transition: transform 0.2s, border-color 0.2s, background-color 0.2s;
   padding: 10px 16px;

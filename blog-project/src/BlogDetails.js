@@ -19,7 +19,9 @@ const BlogDetails = () => {
             id: {id}
           </span>
         </p>
-        <div>{blog.body}</div>
+        <div>
+          <p style={{ textAlign: "justify" }}>{blog.body}</p>
+        </div>
         <Link to="/">
           <button onClick={() => deleteData(blog.id)}>DELETE!</button>
         </Link>
