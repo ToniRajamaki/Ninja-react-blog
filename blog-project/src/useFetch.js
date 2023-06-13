@@ -1,6 +1,6 @@
 var blogs = [
   {
-    id: 1,
+    id: "1",
     title: "The Art of Stealth",
     body: `In a fast-paced, ever-evolving world, the art of stealth has taken on a modern twist. Embracing the spirit of ancient ninjas, we can unleash our inner warriors using a combination of traditional techniques and cutting-edge tactics. 🥷🔥
 
@@ -21,7 +21,7 @@ var blogs = [
     creationDate: new Date("2023-06-13"),
   },
   {
-    id: 2,
+    id: "2",
     title: "Mastering the Shuriken",
     body: `The shuriken, a traditional throwing star used by ancient ninjas, symbolizes precision, accuracy, and unwavering focus. In the modern world, mastering the art of the shuriken takes on new dimensions, transcending physical boundaries to encompass various aspects of life. Let's explore how we can harness the spirit of the shuriken in our daily pursuits. 🔥🌟
 
@@ -44,21 +44,21 @@ var blogs = [
     creationDate: new Date("2023-06-12"),
   },
   {
-    id: 3,
+    id: "3",
     title: "The Way of the Ninja",
     body: "Ninjas, the mysterious warriors of old, continue to captivate our imaginations even in the modern world. Their stealthy techniques and disciplined mindset hold valuable lessons for us today. The way of the ninja teaches us the importance of adaptability, agility, and resilience. By embracing these qualities, we can navigate the challenges of our fast-paced lives with grace and precision. Just like the ninja emoji 🥷, we must learn to blend into our surroundings, strike with precision, and persevere in the face of adversity. The path of the ninja is not just a historical legacy; it is a timeless philosophy for achieving success.",
     author: "Ryu",
     creationDate: new Date("2023-06-11"),
   },
   {
-    id: 4,
+    id: "4",
     title: "Ninjutsu Training Tips",
     body: "Mastering the art of ninjutsu requires dedication and disciplined training. To embark on this path, begin by honing your physical fitness. Embrace strength and flexibility exercises to develop the agility necessary for swift movements. Train your mind to be calm and focused, sharpening your awareness of your surroundings. Embody the ninja emoji 🥷💪, symbolizing power and determination. Practice stealth techniques and improve your stealthy footwork. Explore the principles of camouflage and deception. Remember, true mastery comes with patience and persistence. With each step, you'll inch closer to unlocking the secrets of the ancient ninja warriors.",
     author: "Ayame",
     creationDate: new Date("2023-06-10"),
   },
   {
-    id: 5,
+    id: "5",
     title: "The Stealthy Path to Success",
     body: "Mastering the art of ninjutsu requires dedication and disciplined training. To embark on this path, begin by honing your physical fitness. Embrace strength and flexibility exercises to develop the agility necessary for swift movements. Train your mind to be calm and focused, sharpening your awareness of your surroundings. Embody the ninja emoji 🥷💪, symbolizing power and determination. Practice stealth techniques and improve your stealthy footwork. Explore the principles of camouflage and deception. Remember, true mastery comes with patience and persistence. With each step, you'll inch closer to unlocking the secrets of the ancient ninja warriors.",
     author: "Kenji",

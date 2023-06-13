@@ -7,7 +7,7 @@ const BlogDetails = () => {
   const { id } = useParams();
   const blogs = useFetch();
 
-  const blog = blogs.find((blog) => blog.id === Number(id));
+  const blog = blogs.find((blog) => blog.id === id);
 
   return (
     <div className="blog-details">

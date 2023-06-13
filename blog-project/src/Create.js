@@ -10,11 +10,12 @@ const Create = () => {
   const [title, setTitle] = useState("");
   const [body, setBody] = useState("");
   const [author, setAuthor] = useState("yoshi");
+  const [creationDate, setCreationDate] = useState(null);
+  const [id, setId] = useState(generateUniqueId());
 
   const handleSubmit = (e) => {
     e.preventDefault(); //this prevents default action of the button, in this case refreshing the site
-    const id = generateUniqueId(); //gatherin unique ID
-    const blog = { title, body, author, id }; //creating blog element
+    const blog = { id, title, body, author, creationDate }; //creating blog element
     postData(blog);
   };
   /* FORM */
@@ -46,10 +47,12 @@ const Create = () => {
             <option value="yoshi">yoshi</option>
           </select>
         </label>
-        <button>Create!</button>
+        <button>Add!</button>
         <p>{title}</p>
-        <p>{body}</p>
         <p>{author}</p>
+        <p>{body}</p>
+        <p>{creationDate}</p>
+        <p>{id}</p>
       </form>
     </div>
   );

@@ -4,10 +4,6 @@ import { LuGlasses } from "react-icons/lu";
 
 const BlogList = ({ blogs, title }) => {
   blogs = useFetch();
-  console.log(
-    "%c🔎bloglist is being called",
-    "color: black; background-color: white; font-weight: bold; font-size:15px;"
-  );
   return (
     <div className="blog-list">
       <h1>{title}</h1>
