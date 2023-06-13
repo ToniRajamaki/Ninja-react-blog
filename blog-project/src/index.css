@@ -1,10 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
 
+:root {
+  --main: #f1356d;   /* MAIN */
+  --secondary: #ffffff; /* WHITE */
+  /* --accent-color: #747474;    /* GRAY */
+  --font-color: #333;
+}
+
 /* base styles */
 * {
   margin: 0;
   font-family: "Quicksand";
-  color: #333;
+  color: var(--font-color);
 }
 .navbar {
   padding: 20px;
@@ -15,7 +22,7 @@
   border-bottom: 1px solid #f2f2f2;
 }
 .navbar h1 {
-  color: #f1356d;
+  color: var(--main);
 }
 .navbar .links {
   margin-left: auto;
@@ -26,7 +33,7 @@
   padding: 6px;
 }
 .navbar a:hover {
-  color: #f1356d;
+  color: var(--main);
 }
 .content {
   max-width: 600px;
@@ -34,35 +41,51 @@
   padding: 20px;
 }
 
+
 /* blog previews / list */
 .blog-preview {
+  transition: transform 0.2s, border-color 0.2s, background-color 0.2s;
   padding: 10px 16px;
   margin: 20px 0;
-  border-bottom: 1px solid #fafafa;
+  border: 1px solid;
+  border-radius: 5px;
+  border-bottom: 1px solid #747474;
+  box-shadow: 1px 3px 5px rgba(0,0,0,0.1);
 }
 .blog-preview:hover {
-  box-shadow: 1px 3px 5px rgba(0,0,0,0.1);
+  transform: scale(1.03);
+  box-shadow: 2px 6px 10px rgba(0,0,0,0.1);
+  border-color: #ff0000;
+  background-color: var(--main);
 }
 .blog-preview h2 {
   font-size: 20px;
-  color: #f1356d;
+  color: var(--main);
   margin-bottom: 8px;
+}
+.blog-preview:hover h2 {
+  color: rgb(255, 255, 255);
+}
+
+.blog-preview:hover p {
+  color: black;
 }
 .blog-preview a{
   text-decoration: none;
 }
 
+
 /* blog details page */
 .blog-details h2 {
   font-size: 20px;
-  color: #f1356d;
+  color: var(--main);
   margin-bottom: 10px;
 }
 .blog-details div {
   margin: 20px 0;
 }
 .blog-details button {
-  background: #f1356d;
+  background: var(--main);
   color: #fff;
   border: 0;
   padding: 8px;
@@ -82,7 +105,7 @@
 }
 .create h2 {
   font-size: 20px;
-  color: #f1356d;
+  color: var(--main);
   margin-bottom: 30px;
 }
 .create input, .create textarea, .create select {
@@ -94,7 +117,7 @@
   display: block;
 }
 .create button {
-  background: #f1356d;
+  background: var(--main);
   color: #fff;
   border: 0;
   padding: 8px;
