@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom/cjs/react-router-dom.min";
 import useFetch, { deleteData } from "./useFetch";
+import { LuGlasses } from "react-icons/lu";
 
 const BlogList = ({ blogs, title }) => {
   blogs = useFetch();
@@ -14,7 +15,17 @@ const BlogList = ({ blogs, title }) => {
         <div className="blog-preview" key={blog.id}>
           <Link to={`/blog/${blog.id}`}>
             <h2>{blog.title}</h2>
-            <p>Written by {blog.author}</p>
+            <div
+              style={{
+                display: "flex",
+                justifyContent: "space-between",
+                alignItems: "center",
+              }}
+            >
+              <p style={{ marginRight: "auto" }}>Written by {blog.author}</p>
+              <LuGlasses size={15} strokeWidth={1.0} />
+              <p style={{ paddingLeft: "15px", fontSize: "10px" }}> 6 min</p>
+            </div>
           </Link>
         </div>
       ))}
