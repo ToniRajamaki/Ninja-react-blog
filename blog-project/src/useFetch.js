@@ -70,7 +70,7 @@ const useFetch = () => {
   console.log("using function useFETCH {blogs}", blogs);
   return blogs;
 };
-const postData = (newBlog) => {
+const postData = async (newBlog) => {
   blogs = [...blogs, newBlog];
   console.log("🚀 POSTED~ file: useFetch.js:28 ~ postData ~ blogs:", blogs);
 };

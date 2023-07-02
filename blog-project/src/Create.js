@@ -1,6 +1,8 @@
 import { useState } from "react";
 import { v4 as uuidv4 } from "uuid";
 import { postData } from "./useFetch";
+import { Link } from "react-router-dom/cjs/react-router-dom.min";
+import { useHistory } from "react-router-dom";
 
 function generateUniqueId() {
   return uuidv4();
@@ -12,11 +14,15 @@ const Create = () => {
   const [author, setAuthor] = useState("yoshi");
   const [creationDate, setCreationDate] = useState(null);
   const [id, setId] = useState(generateUniqueId());
+  const history = useHistory();
 
   const handleSubmit = (e) => {
     e.preventDefault(); //this prevents default action of the button, in this case refreshing the site
     const blog = { id, title, body, author, creationDate }; //creating blog element
-    postData(blog);
+    postData(blog).then(() => {
+      // history.go(-1);
+      history.push("/");
+    });
   };
   /* FORM */
   return (
@@ -47,12 +53,8 @@ const Create = () => {
             <option value="yoshi">yoshi</option>
           </select>
         </label>
+
         <button>Add!</button>
-        <p>{title}</p>
-        <p>{author}</p>
-        <p>{body}</p>
-        <p>{creationDate}</p>
-        <p>{id}</p>
       </form>
     </div>
   );
