@@ -145,3 +145,16 @@
 .display-linebreak {
   white-space: pre-line;
 }
+
+.smallText{
+  font-size: 50;
+  color:#747474;
+}
+
+.show-date {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+/* ADD SOME PADDING BETWEEN DATE AND DATE ICON
+ALLIGN SOMEWHERE */

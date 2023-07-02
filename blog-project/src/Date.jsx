@@ -1,6 +1,8 @@
 import React from 'react';
 import './Styles/ShowDate.css';
 import { MdDateRange } from "react-icons/md";
+import './index.css'; // Import the CSS file
+
 
 const ShowDate = (date) => {
     const formatDate = (date) => {
@@ -18,10 +20,13 @@ const ShowDate = (date) => {
     };
   
     return (
-        <div className='show-date'>
-          <MdDateRange />
-          {formatDate(date)}
-        </div>
+      <div className="show-date">
+      <MdDateRange size={12} strokeWidth={0.1} colors="white" />
+      <p style={{ fontSize: 10 }}>
+        {formatDate(date)}
+      </p>
+    </div>
+    
       );
     };
   
