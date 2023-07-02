@@ -1,6 +1,8 @@
 import { Link } from "react-router-dom/cjs/react-router-dom.min";
 import useFetch, { deleteData } from "./useFetch";
 import { LuGlasses } from "react-icons/lu";
+import ShowDate from "./Date";
+import "./Styles/ShowDate.css";
 
 const BlogList = ({ blogs, title }) => {
   blogs = useFetch();
@@ -19,6 +21,10 @@ const BlogList = ({ blogs, title }) => {
               }}
             >
               <p style={{ marginRight: "auto" }}>Written by {blog.author}</p>
+              <p style={{ marginRight: "auto" }}>
+                {" "}
+                {ShowDate(blog.creationDate)}
+              </p>
               <LuGlasses
                 size={15}
                 strokeWidth={1.0}
