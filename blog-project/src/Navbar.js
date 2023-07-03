@@ -9,10 +9,16 @@ const Navbar = () => {
   return (
     <nav className="navbar">
       <div>
-        <h1 style={{ display: "flex", alignItems: "center" }}>
-          <FaUserNinja color="red" size={30} style={{ marginRight: "10px" }} />
-          Ninja Blog
-        </h1>
+        <Link to="/">
+          <h1 style={{ display: "flex", alignItems: "center" }}>
+            <FaUserNinja
+              color="red"
+              size={30}
+              style={{ marginRight: "10px" }}
+            />
+            Ninja Blog
+          </h1>
+        </Link>
       </div>
       <div className="links">
         <Link to="/">Home</Link>
