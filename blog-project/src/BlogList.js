@@ -14,6 +14,7 @@ const BlogList = ({ blogs, title }) => {
           <Link to={`/blog/${blog.id}`}>
             <h2>{blog.title}</h2>
             <div
+              container
               style={{
                 display: "flex",
                 justifyContent: "space-between",

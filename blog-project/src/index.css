@@ -153,8 +153,11 @@
 
 .show-date {
   display: flex;
-  justify-content: flex-end;
   align-items: center;
+  padding-left: 200px;
 }
 /* ADD SOME PADDING BETWEEN DATE AND DATE ICON
 ALLIGN SOMEWHERE */
+.container2{
+  display: flex;
+}
