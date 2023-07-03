@@ -13,7 +13,7 @@ function generateUniqueId() {
 const Create = () => {
   const [title, setTitle] = useState("");
   const [body, setBody] = useState("");
-  const [author, setAuthor] = useState("yoshi");
+  const [author, setAuthor] = useState("");
   const [creationDate, setCreationDate] = useState(new Date());
   const [id, setId] = useState(generateUniqueId());
 
@@ -52,10 +52,13 @@ const Create = () => {
           />
         </label>
         <label>
-          <select value={author} onChange={(e) => setAuthor(e.target.value)}>
-            <option value="mario">mario</option>
-            <option value="yoshi">yoshi</option>
-          </select>
+          Author:
+          <input
+            type="text"
+            required
+            value={author}
+            onChange={(e) => setAuthor(e.target.value)}
+          />
         </label>
 
         <button>Add!</button>
