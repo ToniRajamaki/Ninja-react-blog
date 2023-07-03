@@ -161,3 +161,10 @@ ALLIGN SOMEWHERE */
 .container2{
   display: flex;
 }
+
+.loading-animation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+}

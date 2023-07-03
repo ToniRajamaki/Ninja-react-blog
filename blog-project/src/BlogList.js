@@ -3,12 +3,14 @@ import useFetch, { deleteData } from "./useFetch";
 import { LuGlasses } from "react-icons/lu";
 import ShowDate from "./Date";
 import "./Styles/ShowDate.css";
+import LoadingAnimation from "./LoadingAnimation";
 
 const BlogList = ({ blogs, title }) => {
   blogs = useFetch();
   return (
     <div className="blog-list">
       <h1>{title}</h1>
+      <LoadingAnimation></LoadingAnimation>
       {blogs.map((blog) => (
         <div className="blog-preview" key={blog.id}>
           <Link to={`/blog/${blog.id}`}>

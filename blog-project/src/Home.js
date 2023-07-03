@@ -17,6 +17,7 @@ const Home = () => {
   // }, [name]);
 
   return (
+    
     <div className="home">
       <BlogList blogs={blogs} title="All Blogs" handleDelete={handleDelete} />
     </div>
