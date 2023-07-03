@@ -4,7 +4,7 @@ import { RingLoader } from 'react-spinners';
 function LoadingAnimation() {
   return (
     <div className="loading-animation">
-      <RingLoader color="#123abc" loading={true} />
+      <RingLoader color="#f1356d" loading={true} />
     </div>
   );
 }
