@@ -4,7 +4,7 @@ import './Styles/FeaturedSection.css'; // Ensure this CSS file exists and is cor
 const FeaturedSection = () => {
   const title = "The Path to Becoming a Ninja";
   const description = "Embarking on the way of the ninja is a journey accessible to anyone. With dedication, discipline, and the right guidance, you can transform into an accomplished ninja. Start your adventure today and discover the strength, stealth, and wisdom that lie within.";
-  const imageUrl = "https://static.vecteezy.com/system/resources/previews/027/663/909/large_2x/japanese-samurai-warrior-mighty-ninja-with-swords-cool-poster-of-asian-fighter-with-katana-traditional-hand-drawn-painting-of-fantasy-martial-ronin-vector-art-tattoo-generative-ai-photo.jpg";
+  const imageUrl = "https://raw.githubusercontent.com/ToniRajamaki/Ninja-react-blog/main/public/ninja-image.webp";
 
   return (
     <div className="featured-section">

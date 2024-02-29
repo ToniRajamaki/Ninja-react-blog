@@ -79,10 +79,28 @@
   }
 
   
+.swiper{
+  height: calc(100% + 2em);
+  height: 14em;
+}
 
 
-
-
+.swiper-pagination-bullets {
+}
+  
+  /* Optional: Additional customization for the pagination bullets */
+  .swiper-pagination-bullet {
+    width: 12px; /* Adjust the bullet width */
+    height: 12px; /* Adjust the bullet height */
+    opacity: 1; /* Adjust the non-active bullet opacity */
+    background: #ea296c; /* Ensure bullet background color */
+    --swiper-pagination-color: #ea296c; /* Sets the pagination bullet color */
+  }
+  
+  .swiper-pagination-bullet-active {
+    /* Specific styles for the active bullet, if needed */
+  }
+  
 
 
 

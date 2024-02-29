@@ -4,6 +4,7 @@
     background-color: var(--secondary);
     color: var(--font-color);
     padding: 20px 0px;
+    padding-top: 0px;
     font-family: "Quicksand";
   }
   

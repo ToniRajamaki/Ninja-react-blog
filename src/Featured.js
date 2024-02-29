@@ -1,35 +1,45 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { FaGlasses } from 'react-icons/fa';
-import ShowDate from './Date';
-import './Styles/featured.css';
-
+import { Swiper, SwiperSlide } from 'swiper/react';
+// Import Swiper styles
+import 'swiper/css';
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
+// Import modules from swiper/modules
+import { Navigation, Pagination, Autoplay } from 'swiper/modules';
 
 function Featured() {
-  // Example data, replace with your actual data source
   const features = [
-    { title: "Understanding React", author: "Tanaka", tags: ["React", "JavaScript"], initial: "T" },
-    { title: "Advanced CSS Techniques", author: "Smith", tags: ["CSS", "Design"], initial: "S" },
-    { title: "Intro to TypeScript", author: "Johnson", tags: ["TypeScript", "Programming"], initial: "J" },
+    { title: "The Stealthy Way of the Shadow", author: "Tanaka", tags: ["Stealth"], initial: "T" },
+    { title: "Art of Shuriken Mastery", author: "Smith", tags: ["Weapons"], initial: "S" },
+    { title: "Ancient Scrolls of Ninjutsu", author: "Johnson", tags: ["History"], initial: "J" },
+    { title: "Ninja Fitness and Agility Training", author: "Yamada", tags: ["Fitness", "Agility"], initial: "Y" },
+    { title: "Meditative Practices for the Mindful Ninja", author: "Kobayashi", tags: ["Meditation"], initial: "K" },
   ];
-
   return (
     <div>
       <h2>Senpai's picks</h2>
-      <Link to="/explore" className="explore-more">Explore more</Link>
-      <div className='featured-container'>
+      <Swiper
+        modules={[Navigation, Pagination, Autoplay]} // Activate the modules
+        spaceBetween={0}
+        slidesPerView={2}
+        pagination={{ clickable: true }}
+        autoplay={{ delay: 2500, disableOnInteraction: true }}
+        loop={true}
+      >
         {features.map((feature, index) => (
-          <div className='feature-card' key={index}>
-            <h3>{feature.title}</h3>
-            <div>{feature.tags.map(tag => <span className='feature-tag' key={tag}>{tag} </span>)}</div>
-            <div className='pair'>
-
-            <div className="profile-pic">{feature.initial}</div>
-            <p> <span className='author'>{feature.author}</span></p>
+          <SwiperSlide key={index}>
+            <div className='feature-card'>
+              <h3>{feature.title}</h3>
+              <div>{feature.tags.map(tag => <span className='feature-tag' key={tag}>{tag} </span>)}</div>
+              <div className='pair'>
+                <div className="profile-pic">{feature.initial}</div>
+                <p><span className='author'>{feature.author}</span></p>
+              </div>
             </div>
-          </div>
+          </SwiperSlide>
         ))}
-      </div>
+      </Swiper>
     </div>
   );
 }

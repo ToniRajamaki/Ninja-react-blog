@@ -32,8 +32,6 @@ const Home = () => {
       <br />
       <FeaturedSection></FeaturedSection>
       
-      <br />
-      <br />
 
       <Footer></Footer>
       <br />
