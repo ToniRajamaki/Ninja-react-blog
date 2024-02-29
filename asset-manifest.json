@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/ninja-react-blog/static/css/main.ff4515d6.css",
-    "main.js": "/ninja-react-blog/static/js/main.3f0dca15.js",
-    "static/media/ninja_star.svg": "/ninja-react-blog/static/media/ninja_star.083b8eeec89447d4d58e1c7884e4b8aa.svg",
-    "index.html": "/ninja-react-blog/index.html",
-    "main.ff4515d6.css.map": "/ninja-react-blog/static/css/main.ff4515d6.css.map",
-    "main.3f0dca15.js.map": "/ninja-react-blog/static/js/main.3f0dca15.js.map"
+    "main.css": "/Ninja-react-blog/static/css/main.ff4515d6.css",
+    "main.js": "/Ninja-react-blog/static/js/main.831ae36a.js",
+    "static/media/ninja_star.svg": "/Ninja-react-blog/static/media/ninja_star.083b8eeec89447d4d58e1c7884e4b8aa.svg",
+    "index.html": "/Ninja-react-blog/index.html",
+    "main.ff4515d6.css.map": "/Ninja-react-blog/static/css/main.ff4515d6.css.map",
+    "main.831ae36a.js.map": "/Ninja-react-blog/static/js/main.831ae36a.js.map"
   },
   "entrypoints": [
     "static/css/main.ff4515d6.css",
-    "static/js/main.3f0dca15.js"
+    "static/js/main.831ae36a.js"
   ]
 }
