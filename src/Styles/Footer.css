@@ -3,7 +3,7 @@
     margin-top: 5em;
     background-color: var(--secondary);
     color: var(--font-color);
-    padding: 20px 0;
+    padding: 20px 0px;
     font-family: "Quicksand";
   }
   
@@ -13,7 +13,7 @@
     flex-wrap: wrap;
     max-width: 1200px;
     margin: 0 auto;
-    padding: 20px;
+    padding: 20px 0px;
   }
   
   .footer-section h5 {
