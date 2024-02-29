@@ -2,6 +2,7 @@
 
 :root {
   --main: #f1356d;   /* MAIN */
+  --blue: #235789;    /* BLUE */
   --secondary: #ffffff; /* WHITE */
   /* --accent-color: #747474;    /* GRAY */
   --font-color: #333;
@@ -42,6 +43,8 @@
 }
 
 
+
+
 /* blog previews  this is for hovering the things on the blog list/ list */ 
 .blog-preview {
   transition: transform 0.2s, border-color 0.2s, background-color 0.2s;
@@ -57,6 +60,21 @@
   box-shadow: 2px 6px 10px rgba(0,0,0,0.1);
   background-color: var(--main);
   border-width: 1.5px;
+}
+
+.blog-tag-pair{
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 0.6em;
+margin: 0.2em;
+}
+
+.blog-tag{
+  color: var(--main);
+  cursor: pointer;
+  text-decoration: underline;
+
 }
 
 .blog-preview h2 {

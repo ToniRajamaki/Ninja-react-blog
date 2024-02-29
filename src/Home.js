@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import BlogList from "./BlogList";
 import Featured from "./Featured";
+import Footer from "./Footer";
 
 const Home = () => {
   const [blogs, setBlogs] = useState();
@@ -21,7 +22,12 @@ const Home = () => {
     
     <div className="home">
       <Featured />
+      <br />
+
+
       <BlogList blogs={blogs} title="All Blogs" handleDelete={handleDelete} />
+      <br />
+      <Footer></Footer>
     </div>
   );
 };

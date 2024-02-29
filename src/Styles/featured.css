@@ -1,0 +1,96 @@
+.featured-container {
+  display: flex;
+  flex-direction: row;
+  overflow-x: auto;
+  white-space: nowrap;
+  padding: 10px 0;
+  margin: 20px 0;
+  gap: 20px; /* Ensures space between cards */
+}
+
+.feature-card {
+  flex: 0 0 auto; /* Do not grow, do not shrink, basis auto */
+  transition: transform 0.2s, border-color 0.2s, background-color 0.2s;
+  padding: 10px 16px;
+  border: 1px solid #ccc; /* Light grey border */
+  border-radius: 5px;
+  border-bottom: 1px solid #747474;
+  box-shadow: 1px 3px 5px rgba(0,0,0,0.1);
+  background-color: #fff; /* White background */
+  min-width: 200px; /* Adjust based on your content */
+}
+
+.profile-pic {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  display: inline-block;
+  font-size: 20px;
+  color: var(--secondary);
+  background-color: var(--main); /* Bootstrap primary blue, for example */
+  text-align: center;
+  line-height: 30px;
+  margin-right: 10px; /* Adds spacing between the profile pic and text */
+  cursor: pointer;
+}
+
+.explore-more {
+  position: relative; /* Adjust based on layout, was absolute */
+  float: right; /* Floats to the right of the parent element */
+  font-size: 0.9rem;
+  margin-top: -40px; /* Adjust as needed */
+  color: var(--blue); /* Bootstrap primary blue, for example */
+}
+
+  
+  .feature-card {
+    margin: 10px;
+    padding: 20px;
+    background-color: var(--secondary); /* Light grey, for visibility */
+    border-radius: 5px;
+  }
+  
+  .feature-card h3,
+  .feature-card p {
+    margin: 5px 0;
+  }
+
+  .author{
+    color: var(--blue);
+    text-decoration: underline;
+    cursor: pointer;
+  }
+
+  .pair{
+    padding-top: 20px;
+    display: flex;
+    flex-direction: row;
+  }
+
+  .feature-tag {
+    color: var(--blue);
+    cursor: pointer;
+    padding: 0.2em 0.3em;
+    margin: 0.1em;
+    font-size: 0.8em;
+    border-radius: 20px;
+    background-color: var(--secondary); /* Add a background color */
+    border: 1px solid var(--blue); /* Add a border */
+  }
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

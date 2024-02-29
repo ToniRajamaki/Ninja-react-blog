@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import useFetch from "./useFetch"; // Removed unused deleteData import
 import { FaGlasses } from "react-icons/fa"; // Replaced LuGlasses with FaGlasses (FontAwesome)
 import ShowDate from "./Date";
+import './Styles/featured.css';
 import "./Styles/ShowDate.css";
 import LoadingAnimation from "./LoadingAnimation";
 import React, { useState, useEffect } from "react";
@@ -18,7 +19,16 @@ const BlogList = ({ title }) => {
 
   return (
     <div className="blog-list">
+      <div style={{display: "flex", justifyContent: "space-between", padding: "0.2em"}}>
+
       <h1>{title}</h1>
+      <div className="blog-tag-pair">
+        <span className="blog-tag">shuriken 🗡️</span>
+        <span className="blog-tag">nunchaku 🥋</span>
+        <span className="blog-tag">katana ⚔️</span>
+        <span className="blog-tag">samurai 🏯</span>
+      </div>
+      </div>
       {isLoading && <LoadingAnimation />}
       {!isLoading &&
         blogs.map((blog) => (
