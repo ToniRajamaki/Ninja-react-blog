@@ -19,12 +19,12 @@ const BlogDetails = () => {
           <p style={{ textAlign: "justify" }}>{blog.body}</p>
         </div>
         <br></br>
-        <p style={{ display: "flex", justifyContent: "space-between" }}>
+        <div style={{ display: "flex", justifyContent: "space-between" }}>
           <span>Written by {blog.author}</span>
           <span style={{ textAlign: "right" }}>
             {ShowDate(blog.creationDate)}
           </span>
-        </p>
+        </div>
         {/* HOME Button */}
         <div className="container3">
           <div>
