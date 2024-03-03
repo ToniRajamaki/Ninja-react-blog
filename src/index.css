@@ -1,11 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
 
 :root {
-  --main: #f1356d;   /* MAIN */
-  --blue: #235789;    /* BLUE */
-  --secondary: #ffffff; /* WHITE */
+  --main: #78ffdb;   /* MAIN */
+  --blue: #8893af;    /* BLUE */
+  --secondary: #0b1a2f; /* WHITE */
   /* --accent-color: #747474;    /* GRAY */
-  --font-color: #333;
+  --font-color: #ccd7f5;
 }
 
 /* base styles */
@@ -13,6 +13,7 @@
   margin: 0;
   font-family: "Quicksand";
   color: var(--font-color);
+  background-color: var(--secondary);
 }
 .navbar {
   padding: 20px;

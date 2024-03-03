@@ -17,7 +17,7 @@
   border-bottom: 1px solid #747474;
   box-shadow: 1px 3px 5px rgba(0,0,0,0.1);
   background-color: #fff; /* White background */
-  min-width: 200px; /* Adjust based on your content */
+  min-height: 8em;
 }
 
 .profile-pic {
@@ -85,20 +85,19 @@
 }
 
 
-.swiper-pagination-bullets {
-}
   
   /* Optional: Additional customization for the pagination bullets */
   .swiper-pagination-bullet {
     width: 12px; /* Adjust the bullet width */
     height: 12px; /* Adjust the bullet height */
     opacity: 1; /* Adjust the non-active bullet opacity */
-    background: #ea296c; /* Ensure bullet background color */
-    --swiper-pagination-color: #ea296c; /* Sets the pagination bullet color */
+    --swiper-pagination-bullet-inactive-color: #999999;
+    --swiper-pagination-color: var(--main); /* Sets the pagination bullet color */
   }
   
   .swiper-pagination-bullet-active {
     /* Specific styles for the active bullet, if needed */
+    
   }
   
 
