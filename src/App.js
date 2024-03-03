@@ -5,6 +5,7 @@ import BlogDetails from "./BlogDetails";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import LoadingAnimation from "./LoadingAnimation";
 import Featured from "./Featured";
+import HeroSection from "./HeroSection";
 
 function App() {
   return (
