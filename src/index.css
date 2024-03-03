@@ -4,8 +4,11 @@
   --main: #78ffdb;   /* MAIN */
   --blue: #8893af;    /* BLUE */
   --secondary: #0b1a2f; /* WHITE */
+  --container-bg: #182b45;
+  --hover-bg: #122a3b;
   /* --accent-color: #747474;    /* GRAY */
   --font-color: #ccd7f5;
+  --font-light: rgb(136, 146, 176);
 }
 
 /* base styles */
@@ -21,20 +24,22 @@
   align-items: center;
   max-width: 600px;
   margin: 0 auto;
-  border-bottom: 1px solid #f2f2f2;
+  border-bottom: 1px solid var(--font-light);
 }
 .navbar h1 {
-  color: var(--main);
 }
 .navbar .links {
+  
   margin-left: auto;
 }
 .navbar a {
+  
   margin-left: 16px;
   text-decoration: none;
   padding: 6px;
 }
 .navbar a:hover {
+  
   color: var(--main);
 }
 .content {
@@ -45,23 +50,31 @@
 
 
 
-
 /* blog previews  this is for hovering the things on the blog list/ list */ 
 .blog-preview {
-  transition: transform 0.2s, border-color 0.2s, background-color 0.2s;
+  transition: transform 0.2s, background-color 0.2s;
   padding: 10px 16px;
   margin: 20px 0;
   border: 1px solid;
   border-radius: 5px;
   border-bottom: 1px solid #747474;
   box-shadow: 1px 3px 5px rgba(0,0,0,0.1);
+  background-color: var(--container-bg); /* Add background color */
 }
 .blog-preview:hover {
   transform: scale(1.03);
   box-shadow: 2px 6px 10px rgba(0,0,0,0.1);
-  background-color: var(--main);
-  border-width: 1.5px;
+  background-color: var(--hover-bg);
+  border-color: var(--main);
 }
+.blog-preview:hover * {
+  background-color: var(--hover-bg);
+}
+.blog-preview *{
+  transition: transform 0.2s, background-color 0.2s;
+  background-color: var(--container-bg);
+}
+
 
 .blog-tag-pair{
   display: flex;
@@ -80,27 +93,19 @@ margin: 0.2em;
 
 .blog-preview h2 {
   font-size: 20px;
-  color: var(--main);
+  color: var(--font-color);
   margin-bottom: 8px;
 }
-.blog-preview:hover h2 {
-  color: rgb(255, 255, 255);
-}
+
 .blog-preview:hover .LuGlasses {
   stroke: rgb(255, 255, 255);
   stroke-width: 1.5px;
 }
-.blog-preview:hover p {
-  color: black;
-}
-.blog-preview:hover .whiteHover {
-  color: white;
-}
 
 
-.blog-preview:hover p {
-  color: black;
-}
+
+
+
 .blog-preview a{
   text-decoration: none;
 }
@@ -116,12 +121,14 @@ margin: 0.2em;
   margin: 20px 0;
 }
 .blog-details button {
-  background: var(--main);
-  color: #fff;
-  border: 0;
+  color: var(--main);
+  border: 1px solid var(--main);
   padding: 8px;
   border-radius: 8px;
   cursor: pointer;
+}
+.blog-details button:hover {
+  background-color: var(--hover-bg);
 }
 
 /* create new blog form */
@@ -148,12 +155,22 @@ margin: 0.2em;
   display: block;
 }
 .create button {
-  background: var(--main);
-  color: #fff;
-  border: 0;
+  color: var(--main);
+  border: 1px solid var(--main);
   padding: 8px;
   border-radius: 8px;
   cursor: pointer;
+}
+
+input:active, input:focus, textarea:active, textarea:focus, select:active, select:focus{
+  border: 1px solid var(--main);
+  outline: none;
+  box-shadow: none;
+  background-color: var(--hover-bg);
+}
+
+.create button:hover {
+  background-color: var(--hover-bg);
 }
 
 .LuGlasses{
@@ -181,6 +198,8 @@ ALLIGN SOMEWHERE */
   display: flex;
 }
 .container3{
+  margin-top: 0 !important;
+  padding-top: 0;
   display: flex;
   justify-content: space-between;
 }
@@ -200,10 +219,3 @@ ALLIGN SOMEWHERE */
   height: 200px;
 }
 
-.button2.custom-button {
-  /* Custom styles for the button2 class with the custom-button class */
-  background-color: var(--font-color);
-  color: #ffffff;
-  text-decoration: underline;
-  /* ... */
-}

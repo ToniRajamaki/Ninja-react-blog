@@ -10,9 +10,9 @@ const Navbar = () => {
     <nav className="navbar">
       <div>
         <Link to="/">
-          <h1 style={{ display: "flex", alignItems: "center" }}>
+          <h1 style={{color:"var(--font-color)", display: "flex", alignItems: "center" }}>
             <FaUserNinja
-              color="red"
+              fill="var(--main)"
               size={30}
               style={{ marginRight: "10px" }}
             />

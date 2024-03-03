@@ -19,30 +19,20 @@ const BlogDetails = () => {
           <p style={{ textAlign: "justify" }}>{blog.body}</p>
         </div>
         <br></br>
-        <div style={{ display: "flex", justifyContent: "space-between" }}>
+        <div style={{ display: "flex", justifyContent: "space-between", marginTop: "0px" }}>
           <span>Written by {blog.author}</span>
           <span style={{ textAlign: "right" }}>
             {ShowDate(blog.creationDate)}
           </span>
         </div>
         {/* HOME Button */}
-        <div className="container3">
+        <div className="container3 right">
           <div>
             <Link to="/">
               <button> Home</button>
             </Link>
           </div>
-          {/* DELETE Button */}
-          <div className="right">
-            <Link to="/">
-              <button
-                className="button2 custom-button"
-                onClick={() => deleteData(blog.id)}
-              >
-                Delete
-              </button>
-            </Link>
-          </div>
+         
         </div>
       </article>
     </div>

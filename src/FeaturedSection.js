@@ -9,8 +9,8 @@ const FeaturedSection = () => {
   return (
     <div className="featured-section">
       <div className="text-content">
-        <h2>{title}</h2>
-        <p>{description}</p>
+        <h2 style={{ color: "var(--font-color)" }}>{title}</h2>
+        <p style={{ color: "var(--font-light)" }}>{description}</p>
       </div>
       <div className="image-content">
         <img src={imageUrl} alt="Featured" />

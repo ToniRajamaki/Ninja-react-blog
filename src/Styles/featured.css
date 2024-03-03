@@ -19,6 +19,25 @@
   background-color: #fff; /* White background */
   min-height: 8em;
 }
+.feature-card * {
+  transition: transform 0.2s, background-color 0.2s;
+}
+
+.feature-card:hover,.feature-card:hover *{
+ background-color: var(--hover-bg);
+}
+.feature-card:hover .profile-pic{
+  background-color: var(--main);
+}
+.feature-card .profile-pic{
+  background-color: var(--main);
+
+}
+.feature-card:hover {
+  transform: scale(1.03);
+  box-shadow: 2px 6px 10px rgba(0,0,0,0.1);
+  border-color: var(--main);
+}
 
 .profile-pic {
   width: 30px;
@@ -46,8 +65,11 @@
   .feature-card {
     margin: 10px;
     padding: 20px;
-    background-color: var(--secondary); /* Light grey, for visibility */
+    background-color: var(--container-bg); /* Light grey, for visibility */
     border-radius: 5px;
+  }
+  .feature-card *{
+    background-color: var(--container-bg);
   }
   
   .feature-card h3,
