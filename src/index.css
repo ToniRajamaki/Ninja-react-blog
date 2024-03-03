@@ -12,17 +12,27 @@
 }
 
 /* base styles */
+/* html,body{
+    background: linear-gradient(245.59deg, hsl(210, 32%, 44%) 0%, hsl(215, 33%, 33%) 28.53%, hsl(216, 50%, 15%) 75.52%);
+  
+    height: 100%;
+    width: 100%;
+    position: relative;
+    min-height: 100vh;
+} */
+
 * {
   margin: 0;
   font-family: "Quicksand";
   color: var(--font-color);
-  background-color: var(--secondary);
+  margin-bottom: 0;
+  padding-bottom: 0;
 }
 .navbar {
   padding: 20px;
   display: flex;
   align-items: center;
-  max-width: 600px;
+  max-width: 50em;
   margin: 0 auto;
   border-bottom: 1px solid var(--font-light);
 }
@@ -43,7 +53,9 @@
   color: var(--main);
 }
 .content {
-  max-width: 600px;
+  padding-bottom: 0;
+  margin-bottom: 0;
+  max-width: 50em;
   margin: 40px auto;
   padding: 20px;
 }

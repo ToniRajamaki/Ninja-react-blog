@@ -6,11 +6,11 @@ import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import LoadingAnimation from "./LoadingAnimation";
 import Featured from "./Featured";
 import HeroSection from "./HeroSection";
-
+import "./Styles/app.css";
 function App() {
   return (
     <Router>
-      <div className="App">
+      <div className="app">
         <Navbar />
         <div className="content">
           <Switch>
