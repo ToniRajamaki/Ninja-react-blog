@@ -47,6 +47,7 @@ const Create = () => {
           <textarea
             type="text"
             required
+            rows={20}
             value={body}
             onChange={(e) => setBody(e.target.value)}
           />
@@ -61,7 +62,7 @@ const Create = () => {
           />
         </label>
 
-        <button>Add!</button>
+        <button className="create-button">ADD</button>
       </form>
     </div>
   );

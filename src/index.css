@@ -12,14 +12,12 @@
 }
 
 /* base styles */
-/* html,body{
+html,body{
     background: linear-gradient(245.59deg, hsl(210, 32%, 44%) 0%, hsl(215, 33%, 33%) 28.53%, hsl(216, 50%, 15%) 75.52%);
   
     height: 100%;
     width: 100%;
-    position: relative;
-    min-height: 100vh;
-} */
+}
 
 * {
   margin: 0;
@@ -32,7 +30,7 @@
   padding: 20px;
   display: flex;
   align-items: center;
-  max-width: 50em;
+  max-width: 60em;
   margin: 0 auto;
   border-bottom: 1px solid var(--font-light);
 }
@@ -55,8 +53,8 @@
 .content {
   padding-bottom: 0;
   margin-bottom: 0;
-  max-width: 50em;
-  margin: 40px auto;
+  max-width: 60em;
+  margin: auto auto;
   padding: 20px;
 }
 
@@ -147,6 +145,7 @@ margin: 0.2em;
   max-width: 400px;
   margin: 0 auto;
   text-align: center;
+  padding-top: 20px;
 }
 .create label {
   text-align: left;
@@ -165,13 +164,7 @@ margin: 0.2em;
   box-sizing: border-box;
   display: block;
 }
-.create button {
-  color: var(--main);
-  border: 1px solid var(--main);
-  padding: 8px;
-  border-radius: 8px;
-  cursor: pointer;
-}
+
 
 input:active, input:focus, textarea:active, textarea:focus, select:active, select:focus{
   border: 1px solid var(--main);
@@ -179,9 +172,24 @@ input:active, input:focus, textarea:active, textarea:focus, select:active, selec
   box-shadow: none;
   background-color: var(--hover-bg);
 }
+input, input, textarea, textarea, select, select{
+  border: 1px solid var(--main);
+  outline: none;
+  box-shadow: none;
+  background-color: rgba(0,0,0,0);
+}
 
-.create button:hover {
-  background-color: var(--hover-bg);
+label:active, label:focus, label:hover{
+  color: var(--main);
+}
+
+.blog-specs{
+  display: flex;
+  gap: 2em;
+}
+.blog-preview-container{
+  display: flex;
+  justify-self: flex-end;
 }
 
 .LuGlasses{
@@ -228,5 +236,68 @@ ALLIGN SOMEWHERE */
   justify-content: center;
   align-items: center;
   height: 200px;
+}
+
+/* buttons */
+.button-primary {
+  color: black;
+  background-color: var(--main);
+  border: 1px solid var(--main);
+  font-weight: 500;
+  padding: 8px;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+  margin-right: 2em;
+}
+
+.button-primary:hover {
+background-color: #5cc7aa; /* MAIN */
+  border-color: var(--main-hover);
+}
+
+.button-secondary {
+  color: var(--font-color);
+  font-weight: 500;
+  border: 1px solid var(--main);
+  padding: 8px;
+  border-radius: 8px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.button-secondary:hover {
+  background-color: var(--hover-bg);
+  border-color: var(--secondary-hover);
+}
+
+.button-primary {
+  color: black;
+  background-color: var(--main);
+border: 1px solid var(--main);
+font-weight: 500;
+padding: 8px;
+border-radius: 5px;
+cursor: pointer;
+text-decoration: none;
+margin-right: 2em;
+
+}
+
+.create-button {
+  color: var(--font-color);
+  background-color: rgba(0,0,0,0);
+  margin-top: 1em;
+  font-weight: 500;
+  border: 1px solid var(--main);
+  padding: 8px;
+  border-radius: 8px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.create-button:hover {
+  background-color: var(--hover-bg);
+  border-color: var(--secondary-hover);
 }
 

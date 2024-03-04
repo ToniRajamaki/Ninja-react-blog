@@ -4,8 +4,7 @@ import Create from "./Create";
 import BlogDetails from "./BlogDetails";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import LoadingAnimation from "./LoadingAnimation";
-import Featured from "./Featured";
-import HeroSection from "./HeroSection";
+import Footer from "./Footer";
 import "./Styles/app.css";
 
 // Set the base URL for all routes
@@ -31,6 +30,7 @@ function App() {
           </Switch>
         </div>
       </div>
+        <Footer />
     </Router>
   );
 }

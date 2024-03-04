@@ -18,7 +18,7 @@ const BlogList = ({ title }) => {
   }, [])
 
   return (
-    <div className='blog-list' id="all-blogs">
+    <div className='blog-list' id='all-blogs'>
       <div
         style={{
           display: 'flex',
@@ -40,28 +40,22 @@ const BlogList = ({ title }) => {
             <Link to={`/blog/${blog.id}`}>
               <h2>{blog.title}</h2>
               <div>
-                <div
-                  style={{
-                    display: 'flex',
-                    justifyContent: 'space-between',
-                    alignItems: 'center',
-                  }}>
-                  <span style={{ marginRight: 'auto', color: "var(--font-light)" }}>
+                <div className='blog-preview-container'>
+                  <span
+                    style={{ marginRight: 'auto', color: 'var(--font-light)' }}>
                     Written by {blog.author}
                   </span>
-                  <span style={{ marginRight: 'auto', }}>
-                    {ShowDate(blog.creationDate)}
-                  </span>
-                  <FaGlasses
-                    size={15}
-                    strokeWidth={1.0}
-                    className='LuGlasses'
-                  />
-                  <p
-                    className='whiteHover'
-                    style={{ paddingLeft: '15px', fontSize: '10px' }}>
-                    6 min
-                  </p>
+                  <div className='blog-specs'>
+                    <span style={{ marginRight: 'auto', fontsize: '12px' }}>
+                      {ShowDate(blog.creationDate)}
+                    </span>
+                   
+                    <span>
+      <p style={{ fontSize: "12px", paddingLeft: "10px" }}>
+        6min read
+      </p>
+                    </span>
+                  </div>
                 </div>
               </div>
             </Link>

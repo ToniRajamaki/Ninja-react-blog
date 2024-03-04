@@ -31,7 +31,7 @@ const Home = () => {
       <br />
       <FeaturedSection></FeaturedSection>
 
-      <Footer></Footer>
+      {/* <Footer></Footer> */}
       <br />
     </div>
   )

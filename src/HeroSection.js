@@ -1,4 +1,5 @@
 import React from 'react';
+import {Link} from 'react-router-dom/cjs/react-router-dom.min';
 import './Styles/HeroSection.css'; // Make sure to import the CSS file
 
 const HeroSection = () => {
@@ -11,7 +12,7 @@ const HeroSection = () => {
         <h1 className="title">Written by Ninjas</h1>
         <p className="subtitle">Unleash your inner <span style={{ color: "var(--main)" }}>Ki</span> and embrace the knowledge of the clan.</p>
         <a href="#all-blogs" className="button-primary">Explore blogs</a>
-        <a href="/Ninja-react-blog/create" className="button-secondary">New Blog</a>
+        <Link to="/create" className="button-secondary">Create your own</Link>
       </div>
       <img src={imageUrl} alt="Ninja Hero" className="hero-image" />
     </section>
