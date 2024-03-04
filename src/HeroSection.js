@@ -10,8 +10,8 @@ const HeroSection = () => {
       <div className="content">
         <h1 className="title">Written by Ninjas</h1>
         <p className="subtitle">Unleash your inner <span style={{ color: "var(--main)" }}>Ki</span> and embrace the knowledge of the clan.</p>
-        <a href="#" className="button-primary">Explore blogs</a>
-        <a href="#" className="button-secondary">Create your own</a>
+        <a href="#all-blogs" className="button-primary">Explore blogs</a>
+        <a href="/Ninja-react-blog/create" className="button-secondary">New Blog</a>
       </div>
       <img src={imageUrl} alt="Ninja Hero" className="hero-image" />
     </section>

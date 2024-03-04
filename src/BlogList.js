@@ -18,7 +18,7 @@ const BlogList = ({ title }) => {
   }, [])
 
   return (
-    <div className='blog-list'>
+    <div className='blog-list' id="all-blogs">
       <div
         style={{
           display: 'flex',

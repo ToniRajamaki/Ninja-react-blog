@@ -7,7 +7,7 @@ import { FaUserNinja } from "react-icons/fa";
 
 const Navbar = () => {
   return (
-    <nav className="navbar">
+    <nav className="navbar" id="home">
       <div>
         <Link to="/">
           <h1 style={{color:"var(--font-color)", display: "flex", alignItems: "center" }}>
