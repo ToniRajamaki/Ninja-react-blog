@@ -7,9 +7,13 @@ import LoadingAnimation from "./LoadingAnimation";
 import Featured from "./Featured";
 import HeroSection from "./HeroSection";
 import "./Styles/app.css";
+
+// Set the base URL for all routes
+const baseURL = "/Ninja-react-blog";
+
 function App() {
   return (
-    <Router>
+    <Router basename={baseURL}>
       <div className="app">
         <Navbar />
         <div className="content">
@@ -17,12 +21,13 @@ function App() {
             <Route exact path="/">
               <Home />
             </Route>
-            <Route exact path="/create">
+            <Route path="/create">
               <Create />
             </Route>
-            <Route exact path="/blog/:id">
+            <Route path="/blog/:id">
               <BlogDetails />
             </Route>
+            {/* You can add more routes here */}
           </Switch>
         </div>
       </div>
