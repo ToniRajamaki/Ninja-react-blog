@@ -26,7 +26,11 @@ html,body{
   margin-bottom: 0;
   padding-bottom: 0;
 }
+
 .navbar {
+  /* position: sticky; */
+  top: 0;
+  z-index: 999;
   padding: 20px;
   display: flex;
   align-items: center;
@@ -34,6 +38,36 @@ html,body{
   margin: 0 auto;
   border-bottom: 1px solid var(--font-light);
 }
+
+.links {
+  display: flex;
+  align-items: center; /* Vertically center items in the navbar */
+  justify-content: center; /* Horizontally center navbar items */
+  gap: 20px; /* Adjust the space between navbar items */
+}
+
+.centered-link {
+  display: inline-flex; /* Keeps the link inline but applies flex to its content */
+  align-items: center;
+  text-decoration: none;
+  color: inherit;
+  gap: 8px;
+  margin-left: 16px;
+  text-decoration: none;
+  padding: 6px;
+}
+
+/* Targets the link itself on hover */
+.centered-link:hover {
+  color: var(--main); /* Changes the text color */
+}
+
+/* Targets the icon within the link on hover */
+.centered-link:hover svg {
+  fill: var(--main); /* Changes the icon color */
+}
+
+
 .navbar h1 {
 }
 .navbar .links {
@@ -46,9 +80,16 @@ html,body{
   text-decoration: none;
   padding: 6px;
 }
+
+.link-with-icon {
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+}
 .navbar a:hover {
   
   color: var(--main);
+  fill: var(--main);
 }
 .content {
   padding-bottom: 0;

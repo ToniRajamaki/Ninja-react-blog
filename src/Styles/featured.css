@@ -40,17 +40,35 @@
 }
 
 .profile-pic {
-  width: 30px;
-  height: 30px;
+  width: 1.5em;
+  height: 1.5em;
   border-radius: 50%;
   display: inline-block;
-  font-size: 20px;
+  font-size: 1.3em;
   color: var(--secondary);
   background-color: var(--main); /* Bootstrap primary blue, for example */
   text-align: center;
-  line-height: 30px;
-  margin-right: 10px; /* Adds spacing between the profile pic and text */
+  line-height: 1.5em;
+  margin-right: 0.5em; /* Adds spacing between the profile pic and text */
   cursor: pointer;
+}
+@media (min-width: 600px) {
+  .profile-pic2 {
+    width: 1.5em;
+    height: 1.5em;
+    border-radius: 50%;
+    display: inline-block;
+    font-size: 1.3em;
+    color: var(--secondary);
+    background-color: var(--main); /* Bootstrap primary blue, for example */
+    text-align: center;
+    line-height: 1.5em;
+    margin-right: 0.5em; /* Adds spacing between the profile pic and text */
+    cursor: pointer;
+    text-align: default;
+    margin: 0;
+    margin-left: 1em;
+  }
 }
 
 .explore-more {
