@@ -6,6 +6,10 @@ import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import LoadingAnimation from "./LoadingAnimation";
 import Footer from "./Footer";
 import "./Styles/app.css";
+import AOS from 'aos';
+import 'aos/dist/aos.css'; 
+AOS.init();
+
 
 // Set the base URL for all routes
 const baseURL = "/Ninja-react-blog";

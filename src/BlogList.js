@@ -36,7 +36,7 @@ const BlogList = ({ title }) => {
       {isLoading && <LoadingAnimation />}
       {!isLoading &&
         blogs.map((blog) => (
-          <div className='blog-preview' key={blog.id}>
+          <div className='blog-preview' key={blog.id} data-aos='fade-up'>
             <Link to={`/blog/${blog.id}`}>
               <h2>{blog.title}</h2>
               <div>
@@ -49,11 +49,11 @@ const BlogList = ({ title }) => {
                     <span style={{ marginRight: 'auto', fontsize: '12px' }}>
                       {ShowDate(blog.creationDate)}
                     </span>
-                   
+
                     <span>
-      <p style={{ fontSize: "12px", paddingLeft: "10px" }}>
-        6min read
-      </p>
+                      <p style={{ fontSize: '12px', paddingLeft: '10px' }}>
+                        6min read
+                      </p>
                     </span>
                   </div>
                 </div>
@@ -61,6 +61,9 @@ const BlogList = ({ title }) => {
             </Link>
           </div>
         ))}
+        <div style={{ display: 'flex', justifyContent: 'flex-end' }} data-aos="fade-up">
+          <a href="#" className="button-secondary">browse all..</a>
+        </div>
     </div>
   )
 }

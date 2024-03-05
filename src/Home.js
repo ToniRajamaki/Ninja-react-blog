@@ -1,40 +1,44 @@
-import { useEffect, useState } from 'react'
-import BlogList from './BlogList'
-import Featured from './Featured'
-import Footer from './Footer'
-import FeaturedSection from './FeaturedSection'
-import HeroSection from './HeroSection'
-const Home = () => {
-  const [blogs, setBlogs] = useState()
+import { useEffect, useState } from 'react';
+import BlogList from './BlogList';
+import Featured from './Featured';
+import FeaturedSection from './FeaturedSection';
+import HeroSection from './HeroSection';
+import AOS from 'aos';
+import 'aos/dist/aos.css'; // Make sure AOS CSS is imported
 
-  const [name, setName] = useState('mario')
+const Home = () => {
+  const [blogs, setBlogs] = useState([]);
+
+  // Initialize AOS when the component mounts
+  useEffect(() => {
+    AOS.init({
+      duration: 1000, // Animation duration
+      easing: 'ease-in-out', // An easing function
+      once: true, // Specify if animation should happen only once - while scrolling down
+    });
+  }, []);
 
   const handleDelete = (id) => {
-    const newBlogs = blogs.filter((blog) => blog.id !== id)
-    setBlogs(newBlogs)
-  }
-
-  // useEffect(() => {
-  //   console.log("use effect ran");
-  //   console.log(blogs);
-  // }, [name]);
+    const newBlogs = blogs.filter(blog => blog.id !== id);
+    setBlogs(newBlogs);
+  };
 
   return (
     <div className='home'>
-      <HeroSection></HeroSection>
-      <Featured />
+        <HeroSection />
+      <div data-aos="fade-up" data-aos-delay="1400" duration="1000">
+        <Featured />
+      </div>
       <br />
       <br />
-
-      <BlogList blogs={blogs} title='All Blogs' handleDelete={handleDelete} />
+        <BlogList blogs={blogs} title="All Blogs" handleDelete={handleDelete} />
       <br />
       <br />
-      <FeaturedSection></FeaturedSection>
-
-      {/* <Footer></Footer> */}
+      <br />
+        <FeaturedSection />
       <br />
     </div>
-  )
-}
+  );
+};
 
-export default Home
+export default Home;

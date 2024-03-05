@@ -30,7 +30,7 @@ const Create = () => {
   };
   /* FORM */
   return (
-    <div className="create">
+    <div className="create" data-aos="fade-up">
       <h2>Add a new blog</h2>
       <form onSubmit={handleSubmit}>
         <label>
