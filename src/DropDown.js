@@ -12,7 +12,7 @@ function DropDown() {
   
     return (
       <div className="dropdown">
-        <button className="dropbtn" onClick={toggleDropdown}>Ninja Menu</button>
+        <button className="dropbtn" onClick={toggleDropdown}>Browse</button>
         <div 
           className={`dropdown-content ${isVisible ? "show" : ""}`}
           onMouseLeave={hideDropdown} // Hide dropdown when the cursor leaves the menu

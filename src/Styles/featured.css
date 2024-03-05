@@ -8,6 +8,65 @@
   gap: 20px; /* Ensures space between cards */
 }
 
+.blog-tag-pair{
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+margin: 0.2em;
+}
+
+.blog-tag {
+  cursor: pointer;
+  color: var(--font-color); /* Default color */
+  border-bottom: 2px solid transparent; /* Adjust for invisible border, remove underline */
+  padding: 1em 2em; /* Increased padding around tags */
+  margin-bottom: -2px; /* Aligns bottom border with blog-list's bottom border */
+  text-decoration: none; /* Ensures no underlining */
+  border-bottom: 0.15em solid var(--font-color);
+  padding-bottom: 10px;
+}
+.blog-preview-text {
+
+  text-align: justify;
+  padding: 10px 16px;
+  margin: 20px 0;
+  border-radius: 3px;
+
+}
+
+.blog-tag-preview {
+  cursor: pointer;
+  color: var(--font-color); /* Default color */
+  border-bottom: 2px solid transparent; /* Adjust for invisible border, remove underline */
+  padding: 0.5em 1em; /* Increased padding around tags */
+  margin-bottom: -2px; /* Aligns bottom border with blog-list's bottom border */
+  text-decoration: none; /* Ensures no underlining */
+  border: 0.1em solid var(--font-color);
+  padding-bottom: 5px;
+  border-radius: 3px; /* Rounded corners */
+  font-size: 0.8em; /* Smaller font size */
+  transition: background-color 0.2s, border-color 0.2s; /* Smooth transition */
+}
+
+.blog-tag-preview:hover {
+  background-color: var(--hover-bg); /* Hover background color */
+  border-color: var(--main); /* Hover border color */
+}
+
+.blog-tag.active {
+  color: var(--main); /* Active tag color */
+  border-bottom-color: var(--main); /* Active border color */
+}
+
+.blog-list {
+  padding-bottom: 10px; /* Space above the border */
+}
+
+.blog-preview {
+  padding-bottom: 20px; /* Adds padding to each blog preview for spacing */
+}
+
+
 .feature-card {
   flex: 0 0 auto; /* Do not grow, do not shrink, basis auto */
   transition: transform 0.2s, border-color 0.2s, background-color 0.2s;

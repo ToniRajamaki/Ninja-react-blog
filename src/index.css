@@ -126,13 +126,7 @@ html,body{
 }
 
 
-.blog-tag-pair{
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-end;
-  gap: 0.6em;
-margin: 0.2em;
-}
+
 
 .blog-tag{
   color: var(--main);
@@ -230,7 +224,7 @@ label:active, label:focus, label:hover{
 }
 .blog-preview-container{
   display: flex;
-  justify-self: flex-end;
+  justify-content: space-between;
 }
 
 .LuGlasses{

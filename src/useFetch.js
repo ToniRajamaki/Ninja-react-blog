@@ -1,3 +1,19 @@
+const LOREM = `In a fast-paced, ever-evolving world, the art of stealth has taken on a modern twist. Embracing the spirit of ancient ninjas, we can unleash our inner warriors using a combination of traditional techniques and cutting-edge tactics. 🥷🔥
+
+🌙 Stealth in the shadows: Just as ninjas moved silently through the night, blending into darkness, today's modern warriors adapt to their surroundings. With the help of technology, we navigate the virtual realm, employing encryption and anonymous browsing to maintain our covert status.
+
+💨 Swift as the wind: Emojis like 🏃‍♀️ and 🏃 are our digital shuriken, enabling quick and efficient communication while maintaining a low profile. Our online presence is strategic, with social media used sparingly and only to convey essential messages.
+
+📸 Master of disguise: The modern ninja embraces the art of camouflage. We don different digital identities, utilizing VPNs and proxy servers to hide our true locations. Through clever manipulation of privacy settings, we become invisible to the prying eyes of data harvesters.
+
+👁️‍🗨️ Enhanced perception:  Just as ninjas honed their senses, we sharpen our digital awareness. We analyze metadata, detect phishing attempts, and employ robust cybersecurity measures to keep our virtual environments secure.
+
+🤝 Unity and collaboration: Modern ninjas recognize the power of teamwork. We form tight-knit communities, sharing knowledge and skills to stay one step ahead of adversaries. Encrypted messaging platforms and forums become our modern-day ninja clans.
+
+🧠 Adaptability: The art of stealth is not stagnant; it evolves with the times. Modern ninjas embrace new technologies, staying ahead of potential threats while maintaining the core principles of stealth and secrecy.
+
+In a world where information is power, the modern ninja skillfully weaves through the digital landscape, leaving no trace behind. By embracing the art of stealth and employing modern techniques, we become the guardians of our online identities. So, unleash your inner ninja, embrace the shadows, and let the modern age of stealth begin! 🥷💻✨`
+
 var blogs = [
   {
     id: "1",
@@ -58,12 +74,64 @@ var blogs = [
     creationDate: new Date("2023-06-10"),
   },
   {
-    id: "5",
+    id: "50",
     title: "The Stealthy Path to Success",
     body: "Mastering the art of ninjutsu requires dedication and disciplined training. To embark on this path, begin by honing your physical fitness. Embrace strength and flexibility exercises to develop the agility necessary for swift movements. Train your mind to be calm and focused, sharpening your awareness of your surroundings. Embody the ninja emoji 🥷💪, symbolizing power and determination. Practice stealth techniques and improve your stealthy footwork. Explore the principles of camouflage and deception. Remember, true mastery comes with patience and persistence. With each step, you'll inch closer to unlocking the secrets of the ancient ninja warriors.",
     author: "Kenji",
     creationDate: new Date("2023-06-09"),
+  }, {
+    id: "5",
+    title: "Echoes of the Shinobi",
+    body: `The legacy of the shinobi is not just hidden in shadows but woven into the fabric of our digital age. The principles of stealth, cunning, and wisdom guide us through complex challenges. 🥷🌌
+
+    🌐 Digital Shadows: Like the shinobi who moved unseen, we navigate the digital world with caution, masking our digital footprints to protect our privacy and data from unseen threats.
+    
+    🚀 Agile and Adaptive: Our actions are swift and purposeful, akin to the shuriken's flight. In business and personal growth, being agile allows us to adapt and overcome swiftly.
+    
+    🎭 Faces of Anonymity: In the realm of online interactions, we adopt multiple personas, each serving a purpose in our quest for knowledge and connection, much like the masks worn by the shinobi of old.
+    
+    🔍 Keen Insight: The shinobi's greatest weapon was not the sword but their mind. Today, we sharpen our minds with continuous learning, critical thinking, and embracing diverse perspectives.
+    
+    💡 Illuminate the Shadows: While the shinobi operated in darkness, we seek to bring light to the shadowy corners of the internet, advocating for transparency, security, and ethics.
+    
+    Let's embrace the way of the shinobi, applying ancient wisdom to modern challenges, moving with purpose and integrity in an ever-connected world. 🥷💡`,
+    author: "Miyako",
+    creationDate: new Date("2023-06-08"),
   },
+  {
+    id: "6",
+    title: "Shadows and Software: The Ninja's Way",
+    body: `In today's digital landscape, the ninja's way informs our approach to technology and security. By adopting the stealth and cunning of the ninja, we protect our digital domains. 🥷💾
+
+    🔐 Privacy as a Principle: Just as a ninja values the shadow, we prioritize our digital privacy, employing advanced encryption and secure communication methods to guard our information.
+    
+    🖥️ Hacking as Ninjutsu: Ethical hacking can be likened to the missions of ninjas, using our skills to protect and inform, ensuring the safety of digital infrastructures.
+    
+    🌍 Global Connectivity: Our network is our village. Like ninjas forming alliances, we connect across continents, sharing knowledge and safeguarding each other against threats.
+    
+    📱 Technology as a Tool: For the modern ninja, technology is a sword wielded with precision. We utilize the latest advancements to enhance our capabilities, always mindful of their power.
+    
+    Embracing the shadowy art of the ninja, we navigate the digital age with confidence and skill, protecting our communities and information with the stealth and wisdom of the ancients. 🥷🌐`,
+    author: "Jiro",
+    creationDate: new Date("2023-06-07"),
+  },
+  {
+    id: "7",
+    title: "The Silent Guardians: Modern-Day Ninjas",
+    body: `In the bustling noise of our daily lives, the principles of the ninja remind us of the power of silence, strategy, and subtlety. 🥷🍃
+
+    🌿 Blending with Nature: Just as ninjas blended with their natural surroundings, we learn to harmonize our lives with the environment, promoting sustainability and mindfulness.
+    
+    🛡️ Protecting the Innocent: Today's ninjas are the unseen guardians, cybersecurity experts who shield our data and digital lives from malicious forces.
+    
+    📖 Wisdom Through Silence: In a world of constant noise, adopting the ninja's silent contemplation helps us gain deeper insights and clarity in our decisions.
+    
+    💬 Silent Communication: Utilizing non-verbal cues and digital encryption, we communicate securely, ensuring our messages remain confidential and protected.
+    
+    The modern-day ninja moves unseen, a silent guardian in a chaotic world, embodying the virtues of patience, precision, and protection in every action. 🥷🌌`,
+    author: "Sora",
+    creationDate: new Date("2023-06-06"),
+  }
 ];
 
 const useFetch = () => {
