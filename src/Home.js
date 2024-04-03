@@ -25,10 +25,13 @@ const Home = () => {
 
   return (
     <div className='home'>
+        
         <HeroSection />
       <div data-aos="fade-up" data-aos-delay="1400" duration="1000">
         <Featured />
       </div>
+      <br />
+      <br />
       <br />
       <br />
         <BlogList blogs={blogs} title="All Blogs" handleDelete={handleDelete} />

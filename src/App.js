@@ -7,6 +7,8 @@ import LoadingAnimation from "./LoadingAnimation";
 import Footer from "./Footer";
 import "./Styles/app.css";
 import AOS from 'aos';
+import SpecialOffer from './SpecialOffer';
+
 import 'aos/dist/aos.css'; 
 AOS.init();
 
@@ -18,6 +20,7 @@ function App() {
   return (
     <Router basename={baseURL}>
       <div className="app">
+        <SpecialOffer />        
         <Navbar />
         <div className="content">
           <Switch>
