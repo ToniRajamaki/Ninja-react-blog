@@ -67,7 +67,7 @@ nav ul li {
 
 nav ul li a:not(.active):hover {
   /* background-color:#172554 ; */
-  color: black;
+  color: var(--main);
   font-weight: bold;
 }
 
