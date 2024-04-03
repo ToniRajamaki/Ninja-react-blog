@@ -7,9 +7,12 @@ import LoadingAnimation from "./LoadingAnimation";
 import Footer from "./Footer";
 import "./Styles/app.css";
 import AOS from 'aos';
+import PageFAQ from './PageFAQ';
+import PageAbout from './PageAbout';
 import SpecialOffer from './SpecialOffer';
 
 import 'aos/dist/aos.css'; 
+import BlogList from "./BlogList";
 AOS.init();
 
 
@@ -29,6 +32,16 @@ function App() {
             </Route>
             <Route path="/create">
               <Create />
+            </Route>
+            <Route path="/about-us">
+              <PageAbout />
+            </Route>
+            <Route path="/blogs">
+              <br></br>
+              <BlogList />
+            </Route>
+            <Route path="/faq">
+              <PageFAQ />
             </Route>
             <Route path="/blog/:id">
               <BlogDetails />
