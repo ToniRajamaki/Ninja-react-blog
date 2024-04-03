@@ -1,0 +1,37 @@
+.about-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding: 20px;
+    text-align: left;
+}
+
+
+.about-img {
+}
+  .about-paragraph{
+    text-align: left;
+  }
+  .about-image, .about-content {
+    grid-column: 1 / -1;
+  }
+  
+  .about-image:nth-of-type(even) {
+    order: 1;
+  }
+  
+  .about-content:nth-of-type(odd) {
+    order: 2;
+  }
+  
+  .about-stats {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    margin-top: 20px;
+  }
+  
+  .stat-item {
+    text-align: center !important;
+  }
+  
