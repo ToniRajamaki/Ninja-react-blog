@@ -25,7 +25,7 @@ const Home = () => {
 
   return (
     <div className='home'>
-        
+        <br />
         <HeroSection />
       <div data-aos="fade-up" data-aos-delay="1400" duration="1000">
         <Featured />

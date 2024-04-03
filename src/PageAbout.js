@@ -1,18 +1,22 @@
 import React from "react";
 import "./Styles/PageAbout.css";
 import { FaMask, FaBookDead, FaBolt } from 'react-icons/fa'; // Import ninja-related icons
+import FeaturedSection from './FeaturedSection';
+
 
 const PageAbout = () => {
   return (
+<>
     <div className="about-container">
       <div className="about-image">
         {/* Assuming you have a ninja-themed image to replace this with */}
-        <img src="../public/about-imgwebp.webp" alt="Ninjas in action" className="about-img"/>
+        <img src="https://raw.githubusercontent.com/ToniRajamaki/Ninja-react-blog/main/public/about-imgwebp.webp" alt="Ninjas in action" className="about-img"/>
       </div>
       <div className="about-content">
         <h1 className="about-header">
           About <span className='highlight'>The Ninja Way</span>
         </h1>
+        <br></br>
         <p className="about-paragraph">
           Our journey is not merely one of physical prowess but a continuous quest for self-mastery and excellence. It's rooted in ancient traditions and honed by the discipline that shapes our very being.
         </p>
@@ -45,6 +49,9 @@ const PageAbout = () => {
         </div>
       </div>
     </div>
+        <FeaturedSection />
+    
+    </>
   );
 };
 
