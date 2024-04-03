@@ -32,6 +32,7 @@ const Navbar = () => {
             />
             Ninja Blog
           </h1>
+          
         </Link>
       </div>
 
@@ -43,11 +44,17 @@ const Navbar = () => {
 
       <ul className={menuOpen ? 'open' : ''}>
         {/* Update all navigation items to use Link */}
-        <li>
+          <li>
           <Link className='nav-item' to='/'>
             Home
           </Link>
         </li>
+        <li>
+
+        <Link to='/create' className="centered-link">
+          <FaRegPlusSquare /> New Blog
+        </Link>
+          </li>
         <li>
           <Link className='nav-item' to='/about-us'>
             About

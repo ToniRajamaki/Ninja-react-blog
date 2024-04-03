@@ -16,7 +16,7 @@ const BlogList = ({ title }) => {
     setIsLoading(true);
     const timer = setTimeout(() => {
       setIsLoading(false);
-    }, 200); // Corrected the loading animation duration to 2000 milliseconds (2 seconds)
+    }, 1000); // Corrected the loading animation duration to 2000 milliseconds (2 seconds)
     return () => clearTimeout(timer);
   }, [currentTag]);
 
@@ -86,7 +86,7 @@ const BlogList = ({ title }) => {
         </div>
       ))}
       <div style={{ display: 'flex', justifyContent: 'flex-end' }} data-aos='fade-up'>
-        <a href='#' className='button-secondary'>
+        <a href='#' className='button-secondary' data-aos="zoom-in" data-aos-delay="2000" >
           browse all..
         </a>
       </div>

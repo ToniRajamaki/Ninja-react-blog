@@ -28,9 +28,8 @@ const BlogDetails = () => {
         {/* HOME Button */}
         <div className="container3 right">
           <div>
-            <Link to="/">
-              <button> Home</button>
-            </Link>
+          <Link to="/" className="button-secondary">Home</Link>
+
           </div>
          
         </div>

@@ -16,6 +16,7 @@ margin: 0.2em;
 }
 
 .blog-tag {
+  
   cursor: pointer;
   color: var(--font-color); /* Default color */
   border-bottom: 2px solid transparent; /* Adjust for invisible border, remove underline */
@@ -36,14 +37,17 @@ margin: 0.2em;
 
 .blog-tag-preview {
   cursor: pointer;
-  color: var(--font-color); /* Default color */
+  color: var(--main);
+
   border-bottom: 2px solid transparent; /* Adjust for invisible border, remove underline */
   padding: 0.5em 1em; /* Increased padding around tags */
   margin-bottom: -2px; /* Aligns bottom border with blog-list's bottom border */
   text-decoration: none; /* Ensures no underlining */
-  border: 0.1em solid var(--font-color);
+  border: 0.1em solid var(--main);
   padding-bottom: 5px;
-  border-radius: 3px; /* Rounded corners */
+  border-radius: 9px;
+  padding:0.4em;
+  margin-left: 1em;
   font-size: 0.8em; /* Smaller font size */
   transition: background-color 0.2s, border-color 0.2s; /* Smooth transition */
 }
@@ -167,9 +171,10 @@ margin: 0.2em;
   }
 
   .feature-tag {
-    color: var(--blue);
+    
+    color: var(--main);
     cursor: pointer;
-    padding: 0.2em 0.3em;
+    padding: 0.4em 0.7em;
     margin: 0.1em;
     font-size: 0.8em;
     border-radius: 20px;

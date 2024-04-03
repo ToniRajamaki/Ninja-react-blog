@@ -1,4 +1,5 @@
 import React from 'react'
+import "../src/Styles/PageAbout.css";
 
 function PageAbout() {
   return (

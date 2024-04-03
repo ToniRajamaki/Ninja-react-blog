@@ -40,6 +40,7 @@ nav {
 
 nav ul {
   display: flex;
+  gap:1em;
 }
 
 nav ul li {

@@ -299,6 +299,7 @@ background-color: #5cc7aa; /* MAIN */
   border-radius: 8px;
   cursor: pointer;
   text-decoration: none;
+   background-color: transparent;
 }
 
 .button-secondary:hover {
